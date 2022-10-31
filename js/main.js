@@ -187,6 +187,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
     function initPaging() {
         if (isTablet() && isInited) {
             filterShow(listCategory);
+            deferImgs();
             isInited = false
 
             if ($.fn.pagepiling.destroy) {

@@ -818,13 +818,17 @@ const rdContent = {
   </ol>`
 };
 
-function deferImgs(deferFind) {
+function deferImgs(deferFind="all") {
     const imgDefer = document.querySelectorAll('img[data-defer-src]');
     imgDefer.forEach(element => {
         const deferSrc = element.getAttribute('data-defer-src');
         const deferContent = element.getAttribute('data-defer-content');
         const src = element.getAttribute('src');
-        if (deferSrc && (src != deferSrc) && (deferContent == deferFind)) {
+        if(deferFind !== "all") {
+            if (deferSrc && (src != deferSrc) && (deferContent == deferFind)) {
+                element.setAttribute('src', deferSrc);
+            }
+        } else {
             element.setAttribute('src', deferSrc);
         }
     });
