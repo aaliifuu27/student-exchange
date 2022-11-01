@@ -891,6 +891,7 @@ body {
 .awards__content {
   max-height: 55vh;
   overflow-y: auto;
+  color: var(--black);
 }
 
 .swiper-button-wrapper {
