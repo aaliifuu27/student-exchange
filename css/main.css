@@ -109,10 +109,16 @@
   max-width: 72%;
 }
 
-#modal-title {
+.modal-title {
+  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
   margin-bottom: 10px;
   padding-bottom: 20px;
+  border-bottom: 1px solid var(--grey);
+  text-transform: uppercase;
+  line-height: 110%;
+  color: var(--blue);
   border-bottom: 1px solid var(--grey);
 }
 
@@ -139,7 +145,7 @@
   margin-bottom: 9vh;
   height: 30vh;
   overflow: hidden;
-  width: 68vw;
+  width: 100%;
 }
 
 .course_modal_popup-image {
@@ -191,8 +197,7 @@
   flex: 70%;
 }
 
-.first-content-title,
-.content-right-title {
+.modal-content-title {
   color: var(--black);
   font-size: 28px;
   text-transform: uppercase;
@@ -203,6 +208,7 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
+  margin-bottom: 10px;
 }
 
 .pdf-image {
@@ -222,7 +228,7 @@
 }
 
 .pdf-desc,
-.content-right-desc {
+.modal-content-desc {
   font-size: 15px;
   color: var(--black);
 }
@@ -254,6 +260,7 @@
   .course_modal_popup-content-right {
     flex: 100%;
     margin-bottom: 10px;
+    margin-right: 0;
   }
 }
 
@@ -269,7 +276,45 @@
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 480px) {
+  .modal {
+    width: 127%;
+  }
+
+  .modal-content {
+    top: 4%;
+    left: 4%;
+    transform: translate(0, 0);
+    padding: 2%;
+    height: 100%;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .btn-close {
+    right: 8%;
+    top: 7%;
+  }
+
+  #content-popup {
+    max-height: 80%;
+  }
+
+  .course_modal_popup-image-wrapper {
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .modal-content-title {
+    font-size: 20px;
+  }
+
+  .modal-content-desc {
+    font-size: 13px;
+  }
+
   .pdf-download {
     flex-direction: column;
   }
@@ -280,6 +325,7 @@
     margin-bottom: 10px;
   }
 }
+
 
 .content-right-desc {
   margin-bottom: 20px;
@@ -1349,21 +1395,21 @@ body {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   -webkit-animation: runningLine 10s linear infinite;
-          animation: runningLine 10s linear infinite;
+  animation: runningLine 10s linear infinite;
   -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-play-state: running;
 }
 
 @media (max-width: 1000px) {
   .cases__row {
     -webkit-animation-play-state: running;
-            animation-play-state: running;
+    animation-play-state: running;
   }
 }
 
 .cases__row:hover {
   -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .cases__row-wrapper {
@@ -1380,44 +1426,48 @@ body {
 @-webkit-keyframes runningLine {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(-33.3%);
-            transform: translateX(-33.3%);
+    transform: translateX(-33.3%);
   }
 }
 
 @keyframes runningLine {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(-33.3%);
-            transform: translateX(-33.3%);
+    transform: translateX(-33.3%);
   }
 }
 
 @-webkit-keyframes runningLineWrap {
   0% {
     -webkit-transform: translateX(-33.3%);
-            transform: translateX(-33.3%);
+    transform: translateX(-33.3%);
   }
+
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes runningLineWrap {
   0% {
     -webkit-transform: translateX(-33.3%);
-            transform: translateX(-33.3%);
+    transform: translateX(-33.3%);
   }
+
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -1505,7 +1555,7 @@ body {
   transition: .3s;
 }
 
-.cases__swipe {    
+.cases__swipe {
   position: absolute;
   display: flex;
   bottom: 30%;
@@ -1759,6 +1809,18 @@ body {
 @media (max-width: 1200px) {
   .header__author-mail {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    background-color: var(--white);
+  }
+
+  .header__burger span::before,
+  .header__burger span::after,
+  .header__social-link {
+    color: var(--blue);
   }
 }
 

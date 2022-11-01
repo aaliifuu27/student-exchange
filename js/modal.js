@@ -55,10 +55,10 @@ const contentModal = function (type, property) {
                 <img class="course_modal_popup-image" src="img/about/img.jpg" loading="lazy" data-defer-src="${property.banner || "img/about/img.jpg"}" data-defer-content="modal" />
             </div>
             <div class="first-content">
-                <div class="first-content-title">
+                <div class="first-content-title modal-content-title">
                     ${firstContent.title || ""}
                 </div>
-                <div class="first-content-desc">
+                <div class="first-content-desc modal-content-desc">
                     ${firstContent.desc || ""}
                 </div>
                 </div>
@@ -85,8 +85,8 @@ const contentModal = function (type, property) {
             if (contents.length > 1) {
                 contents.forEach((item, index) => {
                     if (index > 0) {
-                        content += `<div class="content-right-title">${item.title}</div>`;
-                        content += `<div class="content-right-desc">${item.desc}</div>`;
+                        content += `<div class="modal-content-title">${item.title}</div>`;
+                        content += `<div class="modal-content-desc">${item.desc}</div>`;
                     }
                 });
             }

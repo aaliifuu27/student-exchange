@@ -136,20 +136,26 @@ document.addEventListener('DOMContentLoaded', function (e) {
     const anchors = ['home', 'general-info', 'course', 'schedule', 'tuitionfees', 'study-in-itb'];
     const labels = ['home', 'General Information', 'List of Course', 'Schedule', 'Tuition Fees', 'Study In ITB'];
 
-    function changeTheme(index) {
+    function changeTheme(index = 0) {
         const black = "#000";
         const white = "#fff";
         const grey = "#d1d1d1";
         const blue = "#105bab";
+        
         let lineNavigationBgColor = white;
         let sectionBgColor = grey;
         let bodyColor = lineNavigationBgColor;
         let menuHeaderColor = lineNavigationBgColor;
+        
         if (index) {
             sectionBgColor = white;
             lineNavigationBgColor = black;
             bodyColor = lineNavigationBgColor;
             menuHeaderColor = blue;
+        }else {
+            if (isTablet()) {
+                menuHeaderColor = blue;
+            }
         }
         changeBgColorLineNavigationTheme(lineNavigationBgColor);
         changeBgSectionTheme(sectionBgColor);
@@ -182,6 +188,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
     function initPaging() {
         if (isTablet() && isInited) {
+            changeTheme();
             filterShow(listCategory);
             deferImgs();
             isInited = false
