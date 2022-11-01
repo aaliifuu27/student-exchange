@@ -69,10 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // cloneNodes()
     }
-    document.getElementById('cases__swipe').addEventListener("click", function (event) {
-        const courseList = document.getElementById('course_list');
-        event.preventDefault();
-    });
 });
 
 /* 3. Pagepiling */
