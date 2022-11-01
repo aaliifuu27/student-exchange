@@ -818,13 +818,13 @@ const rdContent = {
   </ol>`
 };
 
-function deferImgs(deferFind="all") {
+function deferImgs(deferFind = "all") {
     const imgDefer = document.querySelectorAll('img[data-defer-src]');
     imgDefer.forEach(element => {
         const deferSrc = element.getAttribute('data-defer-src');
         const deferContent = element.getAttribute('data-defer-content');
         const src = element.getAttribute('src');
-        if(deferFind !== "all") {
+        if (deferFind !== "all") {
             if (deferSrc && (src != deferSrc) && (deferContent == deferFind)) {
                 element.setAttribute('src', deferSrc);
             }
@@ -834,6 +834,24 @@ function deferImgs(deferFind="all") {
     });
 
 }
+const backgroundHome = [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+];
+
+setInterval(changeImage, 5000);
+function changeImage() {
+    let i = Math.floor((Math.random() * 3));
+
+    document.querySelector(".section-home").style.backgroundImage = "url('./img/home/" + backgroundHome[i] + "')";
+
+}
+
 
 function deferPdf() {
     const pdfs = document.querySelectorAll('.pdf-button');

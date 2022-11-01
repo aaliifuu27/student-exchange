@@ -573,26 +573,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('../img/home/1.jpg');
-  -webkit-animation: changehomebg 10s linear infinite ;
-  animation: changehomebg 10s  linear infinite;
-}
-
-@keyframes changehomebg {
-  0% {
-    background-image: url('../img/home/2.jpg');
-  }
-  25% {
-    background-image: url('../img/home/3.jpg');
-  }
-  50% {
-    background-image: url('../img/home/4.jpg');
-  }
-  75% {
-    background-image: url('../img/home/5.jpg');
-  }
-  100% {
-    background-image: url('../img/home/6.jpg');
-  }
 }
 
 /* 2.12 Home */
@@ -1367,23 +1347,23 @@ body {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  /* -webkit-animation: runningLine 10s linear infinite;
+  -webkit-animation: runningLine 10s linear infinite;
           animation: runningLine 10s linear infinite;
   -webkit-animation-play-state: running;
-          animation-play-state: running; */
+          animation-play-state: running;
 }
 
-/* @media (max-width: 1000px) {
+@media (max-width: 1000px) {
   .cases__row {
     -webkit-animation-play-state: running;
             animation-play-state: running;
   }
-} */
+}
 
-/* .cases__row:hover {
+.cases__row:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
-} */
+}
 
 .cases__row-wrapper {
   display: -webkit-box;
@@ -1396,7 +1376,7 @@ body {
   flex: 0 0 auto;
 }
 
-/* @-webkit-keyframes runningLine {
+@-webkit-keyframes runningLine {
   0% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -1438,7 +1418,7 @@ body {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-} */
+}
 
 .cases__card {
   width: 25vw;
@@ -1528,9 +1508,10 @@ body {
   position: absolute;
   display: flex;
   bottom: 30%;
-  left: 139px;
-  width: 86vw;
+  left: -3%;
+  width: 106%;
   height: 40px;
+  z-index: 40;
   justify-content: space-between;
 }
 
@@ -1697,6 +1678,12 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media (max-width: 1000) {
+  .header__wrapper {
+    background-color: white;
+  }
 }
 
 @media (max-width: 1559px) {

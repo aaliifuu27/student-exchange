@@ -10,15 +10,15 @@ const filterShow = (category) => {
         courseView = courses.filter((item) => item.category.toUpperCase() === category.toUpperCase());
         setList(courseView);
         
-        document.getElementById('cases_swipe_right').addEventListener("click", function (event) {
-            const courseList = document.getElementById('cases_container');
-            courseList.scrollLeft += 500;
-        });
+        // document.getElementById('cases_swipe_right').addEventListener("click", function (event) {
+        //     const courseList = document.getElementById('cases_container');
+        //     courseList.scrollLeft += 500;
+        // });
 
-        document.getElementById('cases_swipe_left').addEventListener("click", function (event) {
-            const courseList = document.getElementById('cases_container');
-            courseList.scrollLeft -= 500;
-        });
+        // document.getElementById('cases_swipe_left').addEventListener("click", function (event) {
+        //     const courseList = document.getElementById('cases_container');
+        //     courseList.scrollLeft -= 500;
+        // });
     }
 
     document.removeEventListener('modal', modalListener());
