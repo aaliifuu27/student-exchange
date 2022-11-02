@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
             const id = section.getAttribute('id');
 
             if (inViewport && !isPageEnd) {
+                changeTheme(id != 'home');
                 document.querySelector(`[data-menuanchor="${id}"]`).classList.add('active')
             } else {
                 document.querySelector(`[data-menuanchor="${id}"]`).classList.remove('active')
@@ -111,11 +112,11 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
             item.addEventListener('click', function (event) {
 
-                
+
                 if (anchor == "course") {
                     filterShow(listCategory);
                 }
-    
+
                 deferImgs(anchor);
                 event.preventDefault();
 
@@ -141,26 +142,25 @@ document.addEventListener('DOMContentLoaded', function (e) {
         const white = "#fff";
         const grey = "#d1d1d1";
         const blue = "#105bab";
-        
+
         let lineNavigationBgColor = white;
         let sectionBgColor = grey;
         let bodyColor = lineNavigationBgColor;
         let menuHeaderColor = lineNavigationBgColor;
-        
+        let headerBgColor = "transparent";
+
         if (index) {
             sectionBgColor = white;
             lineNavigationBgColor = black;
             bodyColor = lineNavigationBgColor;
+            headerBgColor = sectionBgColor;
             menuHeaderColor = blue;
-        }else {
-            if (isTablet()) {
-                menuHeaderColor = blue;
-            }
         }
         changeBgColorLineNavigationTheme(lineNavigationBgColor);
         changeBgSectionTheme(sectionBgColor);
         changeBodyColor(bodyColor);
         changeMenuHeaderColor(menuHeaderColor);
+        changeHeaderBgColor(headerBgColor);
     }
 
     function changeBgColorLineNavigationTheme(color) {
@@ -186,9 +186,12 @@ document.addEventListener('DOMContentLoaded', function (e) {
         document.querySelector('.header__burger span').style.setProperty("--background", color);
     }
 
+    function changeHeaderBgColor(color) {
+        if (isTablet()) document.querySelector('.header').style.backgroundColor = color;
+    }
+
     function initPaging() {
         if (isTablet() && isInited) {
-            changeTheme();
             filterShow(listCategory);
             deferImgs();
             isInited = false
@@ -223,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
                 if (label == "List of Course") {
                     filterShow(listCategory);
                 }
-    
+
                 deferImgs(anchors[index]);
 
                 [...document.querySelectorAll('.js-page-label')].forEach(element => {
@@ -299,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
         document.getElementById('preloader').style.display = 'none';
     }
 
-    
+
 
     setTimeout(disabledPreloader, 1200);
 

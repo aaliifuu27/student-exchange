@@ -1731,12 +1731,6 @@ body {
   align-items: center;
 }
 
-@media (max-width: 1000) {
-  .header__wrapper {
-    background-color: white;
-  }
-}
-
 @media (max-width: 1559px) {
   .header__wrapper {
     padding: 15px 35px;
@@ -1813,10 +1807,6 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .header {
-    background-color: var(--white);
-  }
-
   .header__burger span::before,
   .header__burger span::after,
   .header__social-link {
