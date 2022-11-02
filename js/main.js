@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
             const { top, bottom } = section.getBoundingClientRect()
             const inViewport = top <= 0 && bottom >= 0
             const id = section.getAttribute('id');
-
+            
             if (inViewport && !isPageEnd) {
                 changeTheme(id != 'home');
                 document.querySelector(`[data-menuanchor="${id}"]`).classList.add('active')
@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
     function scrollToSection() {
         const items = document.querySelectorAll('.header__menu-item');
+        changeTheme();
 
         [...items].forEach(item => {
             const anchor = item.dataset.menuanchor;
@@ -119,14 +120,14 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
                 deferImgs(anchor);
                 event.preventDefault();
-
+                
                 const { top } = section.getBoundingClientRect()
-
+                
                 window.scrollTo({
                     top: window.scrollY + top,
                     behavior: "smooth"
                 });
-
+                
                 if (isTablet()) {
                     document.querySelector('.header__menu').classList.remove('active');
                 }
@@ -187,7 +188,9 @@ document.addEventListener('DOMContentLoaded', function (e) {
     }
 
     function changeHeaderBgColor(color) {
-        if (isTablet()) document.querySelector('.header').style.backgroundColor = color;
+        [...document.querySelectorAll('.header')].forEach(element => {
+            element.style.backgroundColor = color;
+        });
     }
 
     function initPaging() {
