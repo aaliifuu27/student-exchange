@@ -184,6 +184,9 @@ document.addEventListener('DOMContentLoaded', function (e) {
         [...document.querySelectorAll('.header__social-link')].forEach(element => {
             element.style.color = color;
         });
+        [...document.querySelectorAll('.header__author-mail')].forEach(element => {
+            element.style.color = color;
+        });
         document.querySelector('.header__burger span').style.setProperty("--background", color);
     }
 
