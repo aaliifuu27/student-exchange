@@ -88,9 +88,12 @@ document.addEventListener('DOMContentLoaded', function (e) {
             const { top, bottom } = section.getBoundingClientRect()
             const inViewport = top <= 0 && bottom >= 0
             const id = section.getAttribute('id');
-            
             if (inViewport && !isPageEnd) {
+                if (id == "course") {
+                    filterShow(listCategory);
+                }
                 changeTheme(id != 'home');
+                deferImgs(id);
                 document.querySelector(`[data-menuanchor="${id}"]`).classList.add('active')
             } else {
                 document.querySelector(`[data-menuanchor="${id}"]`).classList.remove('active')
@@ -113,21 +116,20 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
             item.addEventListener('click', function (event) {
 
-
                 if (anchor == "course") {
                     filterShow(listCategory);
                 }
 
                 deferImgs(anchor);
                 event.preventDefault();
-                
+
                 const { top } = section.getBoundingClientRect()
-                
+
                 window.scrollTo({
                     top: window.scrollY + top,
                     behavior: "smooth"
                 });
-                
+
                 if (isTablet()) {
                     document.querySelector('.header__menu').classList.remove('active');
                 }
@@ -198,8 +200,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
     function initPaging() {
         if (isTablet() && isInited) {
-            filterShow(listCategory);
-            deferImgs();
             isInited = false
 
             if ($.fn.pagepiling.destroy) {
@@ -228,12 +228,12 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
             function setLabel(index) {
                 const label = labels[index];
+                const anchor = anchors[index];
 
-                if (label == "List of Course") {
+                if (anchor == "course") {
                     filterShow(listCategory);
                 }
-
-                deferImgs(anchors[index]);
+                deferImgs(anchor);
 
                 [...document.querySelectorAll('.js-page-label')].forEach(element => {
                     element.textContent = label
@@ -318,52 +318,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
         type: 'iframe',
         allowfullscreen: 'true'
     });
-});
-
-/* 4. Swiper */
-let swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-});
-
-
-let swiper2 = new Swiper('.swiper-container2', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 3,
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next2',
-        prevEl: '.swiper-button-prev2',
-    },
-    breakpoints: {
-        // when window width is >= 320px
-        280: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-        },
-        700: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-        },
-        // when window width is >= 480px
-        1200: {
-            slidesPerView: 3,
-        },
-        2200: {
-            slidesPerView: 4,
-        },
-        // when window width is >= 640px
-    }
 });
 
 /* 5. Validate */

@@ -10,8 +10,10 @@
   <meta name="keywords" content="Student Exchange">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/slider.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/custom-bootsrap.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,12 +25,13 @@
             <div class="header__logo">
               <img src="img/logo/itb.png" alt="logo">
             </div>
-          </div><a class="header__author-mail" href="https://helpdesk.six.itb.ac.id" target="_blank">helpdesk.six.itb.ac.id</a>
+          </div><a class="header__author-mail" href="https://helpdesk.six.itb.ac.id"
+            target="_blank">helpdesk.six.itb.ac.id</a>
         </div>
         <div class="header__right-inner">
           <ul class="header__social">
-            <li class="header__social-item"><a class="header__social-link"
-                href="tel:+628112101920">+62-8112101920</a></li>
+            <li class="header__social-item"><a class="header__social-link" href="tel:+628112101920">+62-8112101920</a>
+            </li>
             <li class="header__social-item"><a class="header__social-link"
                 href="https://www.instagram.com/admission.itb/" target="_blank">Instagram</a></li>
           </ul>
@@ -58,10 +61,8 @@
                 <div class="register__desc">
                   To apply as ITB Exchange Student, you have to submit your application
                 </div>
-                <a class="layout-radius btn-radius btn-radius-sm btn-menu deactive"
-                  href="https://admission.itb.ac.id/registration/nonreguler/" target="_blank">
-                  Registration
-                </a>
+                <a href="https://admission.itb.ac.id/registration/nonreguler/" target="_blank"
+                  class="btn btn-block btn-lg btn-secondary btn-side">Registration</a>
               </div>
               <ul class="header__menu-contacts">
                 <li class="header__menu-contact"><a class="header__social-link font-white"
@@ -139,46 +140,66 @@
           </div>
         </div>
       </div>
-      <!-- Cases section-->
+
+      <!-- Blog section-->
       <div class="section section-course pp-scrollable">
         <canvas class="noise"></canvas>
-        <div class="section-main cases js-section" id="course">
-          <div class="cases__header">
-            <div class="cases__header-text">
-              <div class="cases__header-title">
-                Students can choose several courses <br> (maximum 22 credits per semester for Bachelor Degree or maximum
-                12 <br> credits per semester for Master Degree), maximum from two faculties.
+        <div class="section-main blog js-section" id="course">
+          <div class="container-main blog__container">
+            <div class="col-lg-12 mb-1">
+              <div class="col-lg-12">
+                <div class="content-title">List of Course</div></div>
+              <div class="col-lg-5 col-md-12 mb-1">
+                <p>Students can choose several courses (maximum 22 credits per semester for Bachelor Degree or maximum
+                  12 credits per semester for Master Degree), maximum from two faculties.</p>
               </div>
-              <div class="cases__header-subtitle">
-                For those interested in taking a fixed set of courses on a specific theme
+              <div class="col-lg-7 col-md-12mb-1">
+                <div class="col-lg-12 mb-1 p-1">
+                  <div class="col-lg-4 col-md-4 col-sm-4 mb-1 p-1">
+                    <button type="button" class="btn btn-sm btn-primary btn-block popup" data-var="flat-rdContent">Requirment &amp;
+                      Document</button>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 mb-1 p-1">
+                    <a href="https://admission.itb.ac.id/registration/nonreguler/mata_kuliah_exchange_web" target="_blank" class="btn btn-sm btn-block btn-primary">Regular Program</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 mb-1 p-1">
+                    <div class="btn-group special btn-toggle">
+                      <button type="button" class="btn btn-sm btn-primary active" id="st-switch">Short Term</button>
+                      <button type="button" class="btn btn-sm btn-primary" id="fs-switch">Full Semesters</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 mb-1 p-1">
+                  <div class="col-lg-10 col-md-10 col-sm-10 mb-1 p-1">
+                    <p>For those interested in taking a fixed set of courses on a specific theme</p>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 mb-1 p-1 swiper-btn-wrapper">
+                    <!-- Carousel prev button-->
+                    <div class="swiper-button-prev2 blog__swiper-button-prev" tabindex="0" role="button"
+                      aria-label="Previous slide" aria-controls="course_list"><svg width="35" height="35"
+                        viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="24.5" stroke="#787A7C"></circle>
+                        <path d="M29 18L21 25L29 32" stroke="#787A7C"></path>
+                      </svg>
+                    </div>
+                    <!-- Carousel next button-->
+                    <div class="swiper-button-next2 blog__swiper-button-next" tabindex="0" role="button"
+                      aria-label="Next slide" aria-controls="course_list"><svg width="35" height="35" viewBox="0 0 50 50"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="24.5" stroke="#787A7C"></circle>
+                        <path d="M21 32L29 25L21 18" stroke="#787A7C"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="cases__header-tool">
-              <div class="layout-radius btn-radius btn-radius-sm popup req-btn" data-var="flat-rdContent">
-                REQUIRMENT & DOCUMENT
-              </div>
-              <a class="layout-radius btn-radius btn-radius-sm reg-btn deactive "
-                href="https://admission.itb.ac.id/registration/nonreguler/mata_kuliah_exchange_web" target="_blank">
-                REGULAR PROGRAM
-              </a>
-              <div class="layout-radius deactive ly-switch">
-                <div class="layout-radius btn-radius btn-radius-sm" id="st-switch">
-                  SHORT TERM
-                </div>
-                <div class="layout-radius btn-radius btn-radius-sm deactive" id="fs-switch">
-                  FULL SEMESTER
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cases__play-animation-right">
-          </div>
-          <div class="cases__play-animation-left">
-          </div>
-          <div class="cases__container" id="cases_container">
-            <div class="cases__row-wrapper">
-              <div class="cases__row js-cases-row" id="course_list">
+            <div class="blog__content">
+              <!-- Carousel with blog posts-->
+              <div class="swiper-container2 blog__swiper-container">
+                <div class="swiper-wrapper blog__swiper-wrapper" id="course_list">
 
+                </div>
               </div>
             </div>
           </div>
@@ -193,10 +214,8 @@
             <div class="awards__subtitle">
               <div class="awards__desc">To apply as ITB Exchange Student, <br> you have to submit your application and
                 documents</div>
-              <a class="layout-radius btn-radius btn-radius-sm"
-                href="https://admission.itb.ac.id/registration/nonreguler/" target="_blank">
-                Registration Here
-              </a>
+              <a href="https://admission.itb.ac.id/registration/nonreguler/" target="_blank"
+                class="btn btn-lg btn-primary">Registration</a>
             </div>
             <div class="awards__subdesc subdesc__grey">
               The complete schedule of the ITB Student-Exchange Program is as follows
@@ -393,10 +412,10 @@
       </div>
     </div>
   </main>
-  <section class="modal hidden">
-    <div class="modal-content">
+  <section class="itb-modal hidden">
+    <div class="itb-modal-content">
       <span class="btn-close">&times;</span>
-      <div id="modal-title" class="modal-title"></div>
+      <div id="itb-modal-title" class="itb-modal-title"></div>
       <div id="content-popup"></div>
     </div>
   </section>

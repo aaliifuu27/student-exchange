@@ -1,4 +1,4 @@
-const modal = document.querySelector(".modal");
+const modal = document.querySelector(".itb-modal");
 const closeModalBtn = document.querySelector(".btn-close");
 
 // close modal function
@@ -22,6 +22,9 @@ const openModal = function (e) {
     const data = item.getAttribute('data-var');
     const type = data.split("-")[0];
     const object = data.split("-")[1];
+    console.log(e);
+    console.log(item);
+    console.log(data);
     const property = eval(object);
     const content = contentModal(type, property);
     const modalContent = document.getElementById("content-popup");
@@ -33,7 +36,7 @@ const openModal = function (e) {
 };
 
 const contentModal = function (type, property) {
-    const modalTitle = document.getElementById("modal-title");
+    const modalTitle = document.getElementById("itb-modal-title");
     let content = "";
     switch (type) {
         case "flat":
@@ -55,10 +58,10 @@ const contentModal = function (type, property) {
                 <img class="course_modal_popup-image" src="img/about/img.jpg" loading="lazy" data-defer-src="${property.banner || "img/about/img.jpg"}" data-defer-content="modal" />
             </div>
             <div class="first-content">
-                <div class="first-content-title modal-content-title">
+                <div class="first-content-title itb-modal-content-title">
                     ${firstContent.title || ""}
                 </div>
-                <div class="first-content-desc modal-content-desc">
+                <div class="first-content-desc itb-modal-content-desc">
                     ${firstContent.desc || ""}
                 </div>
                 </div>
@@ -85,8 +88,8 @@ const contentModal = function (type, property) {
             if (contents.length > 1) {
                 contents.forEach((item, index) => {
                     if (index > 0) {
-                        content += `<div class="modal-content-title">${item.title}</div>`;
-                        content += `<div class="modal-content-desc">${item.desc}</div>`;
+                        content += `<div class="itb-modal-content-title">${item.title}</div>`;
+                        content += `<div class="itb-modal-content-desc">${item.desc}</div>`;
                     }
                 });
             }
