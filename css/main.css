@@ -15,7 +15,7 @@
   --blue: #105bab;
   --lightblue: #1b72cf;
   --lightgrey: #d1d1d1;
-  --xlfont: 60px;
+  --xlfont: 48px;
   --hovercolor: var(--blue);
   --hovercolorblack: var(--black);
   --background: var(--white);
@@ -831,7 +831,7 @@ body {
 .about__img-wrapper {
   position: relative;
   margin-top: 4.629vh;
-  height: 45vh;
+  height: 40vh;
   overflow: hidden;
   border-radius: 1.25em;
 }
@@ -1400,8 +1400,7 @@ body {
 .blog__swiper-img-wrapper {
   position: relative;
   overflow: hidden;
-  height: 53.35185vh;
-  cursor: pointer;
+  height: 39.35185vh;
   width: 100%;
   -webkit-transition: -webkit-transform .3s ease;
   transition: -webkit-transform .3s ease;
@@ -1424,33 +1423,21 @@ body {
 }
 
 .blog__swiper-card-date {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 140%;
   margin-top: 1.85185vh;
-  color: var(--black);
+  font-weight: 400;
 }
 
 .blog__swiper-card-desc {
-  font-size: 22px;
+  margin-top: 0.92593vh;
+  font-size: 13px;
   line-height: 140%;
-  color: var(--white);
-  position: absolute;
-  top: 8%;
-  left: 8%;
-  width: 83%;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-@media (max-width: 1200px) {
-  .blog__swiper-card-desc {
-    font-size: 20px;
-  }
 }
 
 .swiper-btn-wrapper {
   display: flex;
-  height: 30px;
+  height: 50px;
   justify-content: space-between;
 }
 /* 
@@ -1469,23 +1456,16 @@ body {
   }
 } */
 
-.blog__swiper-button-prev svg circle {
+.blog__swiper-button-prev {
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
-.blog__swiper-button-prev svg path {
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+
+.blog__swiper-button-prev:hover {
+  opacity: 80%;
 }
 
-.blog__swiper-button-prev:hover svg circle {
-  stroke: var(--blue);
-}
-
-.blog__swiper-button-prev:hover svg path {
-  stroke: var(--blue);
-}
 /* 
 .blog__swiper-button-next {
   position: absolute;
@@ -1502,22 +1482,14 @@ body {
   }
 } */
 
-.blog__swiper-button-next svg circle {
+.blog__swiper-button-next {
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
-.blog__swiper-button-next svg path {
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-}
 
-.blog__swiper-button-next:hover svg circle {
-  stroke: var(--blue);
-}
-
-.blog__swiper-button-next:hover svg path {
-  stroke: var(--blue);
+.blog__swiper-button-next:hover {
+  opacity: 80%;
 }
 
 .swiper-slide {

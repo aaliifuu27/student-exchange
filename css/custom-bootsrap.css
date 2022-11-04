@@ -49,6 +49,10 @@
   padding: 0;
 }
 
+.grey {
+  color: var(--grey);
+}
+
 .p-1 {
   padding: 2px;
 }
