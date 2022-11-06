@@ -1350,30 +1350,11 @@ body {
 
 .blog__content {
   margin-top: 9.25926vh;
-  margin-right: 14vw;
-}
-
-@media (max-width: 1920px) {
-  .blog__content {
-    margin-right: 180px;
-  }
 }
 
 @media (max-height: 900px) {
   .blog__content {
     margin-top: 4.62963vh;
-  }
-}
-
-@media (max-width: 1559px) {
-  .blog__content {
-    margin-right: 50px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .blog__content {
-    margin-right: 0px;
   }
 }
 
@@ -1384,7 +1365,6 @@ body {
 
 .blog__swiper-container {
   width: 100%;
-  margin: -20px;
   overflow: hidden;
 }
 

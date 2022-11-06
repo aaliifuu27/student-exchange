@@ -96,15 +96,15 @@ function initSwiper() {
 document.addEventListener('DOMContentLoaded', () => {
     fullSemesterSwitch.addEventListener('click', (e) => {
         const element = e.target;
-        shortTermSwitch.classList.remove("active");
-        element.classList.add("active");
+        shortTermSwitch.classList.remove("switch-on");
+        element.classList.add("switch-on");
         listCategory = "FULL SEMESTER";
         filterShow(listCategory);
     });
     shortTermSwitch.addEventListener('click', (e) => {
         const element = e.target;
-        fullSemesterSwitch.classList.remove("active");
-        element.classList.add("active");
+        fullSemesterSwitch.classList.remove("switch-on");
+        element.classList.add("switch-on");
         listCategory = "SHORT TERM";
         filterShow(listCategory);
     });

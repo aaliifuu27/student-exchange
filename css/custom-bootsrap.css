@@ -65,8 +65,17 @@
   margin-bottom: 10px !important;
 }
 
+.mt-1 {
+  margin-top: 10px !important;
+}
+
 .btn {
   text-transform: uppercase;
+  padding: 8px 14px;;
+}
+
+.sm-h {
+  height:2px;
 }
 
 .btn-group.special {
@@ -158,7 +167,105 @@
   color: var(--blue);
   background-color: transparent;
   border-color: var(--blue);
-  color: var(--blue);
   border: 1px solid var(--blue);
   opacity: 1;
 }
+
+.layout-switch {
+  display: flex;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  background-image: none;
+  line-height: 1.42857143;
+  border-radius: 35px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 2px;
+  background-color: var(--lightgrey);
+}
+
+.btn-switch {
+    border: none;
+    opacity: 1;
+    border-radius: 35px;
+    cursor: pointer;
+    color: var(--grey);
+    background-color: transparent;
+}
+
+.switch-on:hover {
+  color: var(--white);
+}
+
+.switch-on {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.btn.btn-switch.focus,
+.btn.btn-switch:focus {
+  outline: none;
+  box-shadow: none;
+  color: var(--white);
+}
+.btn.btn-switch:hover {
+  outline: none;
+  box-shadow: none;
+  color: var(--white);
+}
+.btn.btn-switch.active,
+.btn.btn-switch:active {
+  outline: none;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.btn.btn-switch.active.focus,
+.btn.btn-switch.active:focus,
+.btn.btn-switch.active:hover,
+.btn.btn-switch:active.focus,
+.btn.btn-switch:active:focus,
+.btn.btn-switch:active:hover {
+  color: var(--white);
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.btn.btn-switch a .focus,
+.btn.btn-switch a :focus {
+  color: var(--white);
+  box-shadow: none;
+}
+
+.btn.btn-switch a :visited, .btn.btn-switch :visited {
+  color: var(--white);
+  border: (none);
+}
+.btn.btn-switch a :hover {
+  color: var(--white);
+  outline: none;
+}
+.btn.btn-switch.active a,
+.btn.btn-switch a :active {
+  color: var(--white);
+  outline: none;
+}
+
+.btn.btn-switch.active.focus a,
+.btn.btn-switch.active a:focus,
+.btn.btn-switch.active a:hover,
+.btn.btn-switch a :active.focus,
+.btn.btn-switch a :active:focus,
+.btn.btn-switch a :active:hover {
+  color: var(--white);
+  outline: none;
+  box-shadow: none;
+}
+
