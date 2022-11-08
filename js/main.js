@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
             const inViewport = top <= 0 && bottom >= 0
             const id = section.getAttribute('id');
             if (inViewport && !isPageEnd) {
-                if (id == "course") {
+                if (id == "package") {
                     filterShow(listCategory);
                 }
                 changeTheme(id != 'home');
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
             item.addEventListener('click', function (event) {
 
-                if (anchor == "course") {
+                if (anchor == "package") {
                     filterShow(listCategory);
                 }
 
@@ -137,8 +137,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
         })
     }
 
-    const anchors = ['home', 'general-info', 'course', 'schedule', 'tuitionfees', 'study-in-itb'];
-    const labels = ['home', 'General Information', 'List of Course', 'Schedule', 'Tuition Fees', 'Study In ITB'];
+    const anchors = ['home', 'general-info', 'package', 'regular-program', 'schedule', 'tuitionfees', 'study-in-itb'];
+    const labels = ['home', 'General Information', 'List of Packages', 'Regular Program', 'Schedule', 'Tuition Fees', 'Study In ITB'];
 
     function changeTheme(index = 0) {
         const black = "#000";
@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
                 const label = labels[index];
                 const anchor = anchors[index];
 
-                if (anchor == "course") {
+                if (anchor == "package") {
                     filterShow(listCategory);
                 }
                 deferImgs(anchor);

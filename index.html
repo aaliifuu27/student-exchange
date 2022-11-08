@@ -48,8 +48,11 @@
                 </li>
                 <li class="header__menu-item" data-menuanchor="general-info"><a class="header__menu-link"
                     href="#general-info">General Information</a></li>
-                <li class="header__menu-item" data-menuanchor="course"><a class="header__menu-link" href="#course">List
-                    Of Course</a></li>
+                <li class="header__menu-item" data-menuanchor="package"><a class="header__menu-link"
+                    href="#package">List
+                    Of Packages</a></li>
+                <li class="header__menu-item" data-menuanchor="regular-program"><a class="header__menu-link"
+                    href="#regular-program">Regular Program</a></li>
                 <li class="header__menu-item" data-menuanchor="schedule"><a class="header__menu-link"
                     href="#schedule">Schedule</a></li>
                 <li class="header__menu-item" data-menuanchor="tuitionfees"><a class="header__menu-link"
@@ -142,13 +145,13 @@
       </div>
 
       <!-- Blog section-->
-      <div class="section section-course pp-scrollable">
+      <div class="section section-package pp-scrollable">
         <canvas class="noise"></canvas>
-        <div class="section-main blog js-section" id="course">
+        <div class="section-main blog js-section" id="package">
           <div class="container-main blog__container">
             <div class="col-lg-12 mb-1">
               <div class="col-lg-12">
-                <div class="content-title">List of Course</div>
+                <div class="content-title">List of Packages</div>
               </div>
               <div class="col-lg-5 col-md-12 mb-1">
                 <p>Students can choose several courses (maximum 22 credits per semester for Bachelor Degree or maximum
@@ -156,32 +159,24 @@
               </div>
               <div class="col-lg-7 col-md-12">
                 <div class="col-lg-12 p-1 mb-1">
-                  <div class="col-lg-4 col-md-4 col-sm-4 mb-1 p-1">
+                  <div class="col-lg-7 col-md-7 col-sm-7 mb-1 p-1">
                     <button type="button" class="btn btn-sm btn-primary btn-block popup"
                       data-var="flat-rdContent">Requirment &amp;
                       Document</button>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-4 mb-1 p-1">
-                    <a href="https://admission.itb.ac.id/registration/nonreguler/mata_kuliah_exchange_web"
-                      target="_blank" class="btn btn-sm btn-block btn-primary">Regular Program</a>
-                  </div>
-                  <div class="col-lg-5 col-md-4 col-sm-4 mb-1 p-1">
+                  <div class="col-lg-5 col-md-5 col-sm-5 mb-1 p-1">
                     <div class="layout-switch btn-block special btn-toggle">
                       <button type="button" class="btn btn-sm btn-switch switch-on" id="st-switch">Short Term</button>
                       <button type="button" class="btn btn-sm btn-switch" id="fs-switch">Full Semesters</button>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-12 p-1">
-                    <div class="grey">For those interested in taking a fixed set of courses on a sdivecific theme</div>
-                </div>
               </div>
             </div>
 
             <div class="col-lg-12 mb-1 mt-1 p-1 swiper-btn-wrapper">
               <!-- Carousel prev button-->
-              <img class="swiper-button-prev2 blog__swiper-button-prev"
-                src="img/cases/left.svg" alt="img">
+              <img class="swiper-button-prev2 blog__swiper-button-prev" src="img/cases/left.svg" alt="img">
               <!-- <div class="swiper-button-prev2 blog__swiper-button-prev" tabindex="0" role="button"
                 aria-label="Previous slide" aria-controls="course_list"><svg width="35" height="35" viewBox="0 0 50 50"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -190,8 +185,7 @@
                 </svg>
               </div> -->
               <!-- Carousel next button-->
-              <img class="swiper-button-next2 blog__swiper-button-next"
-                src="img/cases/right.svg" alt="img">
+              <img class="swiper-button-next2 blog__swiper-button-next" src="img/cases/right.svg" alt="img">
               <!-- <div class="swiper-button-next2 blog__swiper-button-next" tabindex="0" role="button"
                 aria-label="Next slide" aria-controls="course_list"><svg width="35" height="35" viewBox="0 0 50 50"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,7 +197,7 @@
             <div class="blog__content">
               <!-- Carousel with blog posts-->
               <div class="swiper-container2 blog__swiper-container">
-                <div class="swiper-wrapper blog__swiper-wrapper" id="course_list">
+                <div class="swiper-wrapper blog__swiper-wrapper" id="package_list">
 
                 </div>
               </div>
@@ -211,6 +205,33 @@
           </div>
         </div>
       </div>
+
+      <!-- Testimonials section-->
+      <div class="section section-regular-program pp-scrollable">
+        <canvas class="noise"></canvas>
+        <div class="section-main testimonials js-section" id="regular-program">
+          <div class="container-main testimonials__container">
+            <div class="content-title">Regular Program</div>
+            <div class="testimonials__content">
+              <div class="swiper-container testimonials__swiper-container">
+                <div class="swiper-wrapper testimonials__swiper-wrapper">
+                  <!-- Review slide-->
+                  <div class="swiper-slide testimonials__swiper-slide"> 
+                    <div class="testimonials__swiper-content"> 
+                      <div class="testimonials__swiper-text">If you are interested to take some courses in ITB, you can choose the regular program. The Regular program offers more than 100 courses which you can choose up to 22 ITB credit unit. You can combine the Package program with the courses of the regular program also.
+                      </div>
+                      <div class="testimonials__swiper-author">
+                        <a href="https://admission.itb.ac.id/registration/nonreguler/mata_kuliah_exchange_web"
+                          target="_blank" class="btn btn-sm btn-primary">List Of Course</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Awards section-->
       <div class="section section-schedule pp-scrollable">
         <canvas class="noise"></canvas>

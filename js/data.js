@@ -1,4 +1,4 @@
-const courses = [
+const packages = [
     {
         "category": "FULL SEMESTER",
         "title": "SUSTAINABLE INFRASTRUCTURE",
@@ -649,7 +649,7 @@ design, improve or evaluate the destination.`
     {
         "category": "SHORT TERM",
         "title": "DEVELOPING ELECTRICITY & TELECOMUNICATION INFRASTRUCTURE IN RURAL AREAS",
-        "desc": "COURES PACKAGE AND SHORT-TERM PROGRAM (1 MONTH) FOR BACHELOR",
+        "desc": "COURSES PACKAGE AND SHORT-TERM PROGRAM (1 MONTH) FOR BACHELOR",
         "faculty": "School of Electical Engineering and Informatics",
         "cover": "courses/short/cover/04.jpg",
         "banner": "courses/short/banner/04.jpg",
@@ -721,7 +721,7 @@ design, improve or evaluate the destination.`
     {
         "category": "SHORT TERM",
         "title": "DEVELOPING ELECTRICITY & TELECOMUNICATION INFRASTRUCTURE IN RURAL AREAS",
-        "desc": "COURES PACKAGE AND SHORT-TERM PROGRAM (1 MONTH) FOR BACHELOR",
+        "desc": "COURSES PACKAGE AND SHORT-TERM PROGRAM (1 MONTH) FOR BACHELOR",
         "faculty": "School of Electical Engineering and Informatics",
         "cover": "courses/short/cover/05.jpg",
         "banner": "courses/short/banner/05.jpg",
@@ -759,7 +759,7 @@ design, improve or evaluate the destination.`
     {
         "category": "SHORT TERM",
         "title": "DEVELOPING ELECTRICITY & TELECOMUNICATION INFRASTRUCTURE IN RURAL AREAS",
-        "desc": "COURES PACKAGE AND SHORT-TERM PROGRAM (1 MONTH) FOR BACHELOR",
+        "desc": "COURSES PACKAGE AND SHORT-TERM PROGRAM (1 MONTH) FOR BACHELOR",
         "faculty": "School of Electical Engineering and Informatics",
         "cover": "courses/short/cover/06.jpg",
         "banner": "courses/short/banner/06.jpg",

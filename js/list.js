@@ -1,43 +1,43 @@
-const courseList = document.getElementById("course_list");
+const packageList = document.getElementById("package_list");
 const fullSemesterSwitch = document.getElementById("fs-switch");
 const shortTermSwitch = document.getElementById("st-switch");
 let listCategory = "SHORT TERM";
-let courseView = [];
+let packageView = [];
 const filterShow = (category) => {
-    resetCourseList();
-    const filterView = courses.filter((item) => item.category.toUpperCase() === category.toUpperCase());
-    if (courseView != filterView) {
-        courseView = courses.filter((item) => item.category.toUpperCase() === category.toUpperCase());
-        setList(courseView);
+    resetpackageList();
+    const filterView = packages.filter((item) => item.category.toUpperCase() === category.toUpperCase());
+    if (packageView != filterView) {
+        packageView = packages.filter((item) => item.category.toUpperCase() === category.toUpperCase());
+        setList(packageView);
     }
 
     document.removeEventListener('modal', modalListener());
     document.addEventListener('modal', modalListener());
-    deferImgs('course');
+    deferImgs('package');
     initSwiper();
 };
-const resetCourseList = () => courseList.innerHTML = "";
+const resetpackageList = () => packageList.innerHTML = "";
 const setList = (list) => {
     if (list.length > 0) {
         list.forEach((item, index) => {
-            courseList.insertAdjacentHTML('beforeend', `<div class="swiper-slide blog__swiper-slide">
+            packageList.insertAdjacentHTML('beforeend', `<div class="swiper-slide blog__swiper-slide">
                 <!-- blog post card-->
-                <div class="blog__swiper-card"><a class="blog__swiper-link popup" data-var="course-${index}" data-category="${item.category}">
-                    <div class="blog__swiper-img-wrapper" data-var="course-${index}"><img class="blog__swiper-img" src="img/cases/img1.jpg" loading="lazy" data-defer-src="${item.cover
-                || "img/cases/img1.jpg"}" data-defer-content="course" data-var="course-${index}"alt="${item.title}"></div>
-                    <div class="blog__swiper-card-date" data-var="course-${index}">${item.desc}</div>
+                <div class="blog__swiper-card"><a class="blog__swiper-link popup" data-var="package-${index}" data-category="${item.category}">
+                    <div class="blog__swiper-img-wrapper" data-var="package-${index}"><img class="blog__swiper-img" src="img/cases/img1.jpg" loading="lazy" data-defer-src="${item.cover
+                || "img/cases/img1.jpg"}" data-defer-content="package" data-var="package-${index}"alt="${item.title || ""}"></div>
+                    <div class="blog__swiper-card-date" data-var="package-${index}">${item.title || ""}</div>
                 </a>
-                <div class="blog__swiper-card-desc popup" data-var="course-${index}">${item.title}</div>
+                <div class="blog__swiper-card-desc popup" data-var="package-${index}">${item.desc || ""}</div>
                 </div>
             </div>`);
-            // courseList.insertAdjacentHTML('beforeend', `
-            //     <div class="cases__card popup js-cases-card" data-var="course-${index}" data-category="${item.category}">
-            //         <div class="cases__text" data-var="course-${index}">
-            //             <div class="cases__card-title" data-var="course-${index}">${item.title}</div>
-            //             <div class="cases__card-desc" data-var="course-${index}">${item.desc}</div>
+            // packageList.insertAdjacentHTML('beforeend', `
+            //     <div class="cases__card popup js-cases-card" data-var="package-${index}" data-category="${item.category}">
+            //         <div class="cases__text" data-var="package-${index}">
+            //             <div class="cases__card-title" data-var="package-${index}">${item.title}</div>
+            //             <div class="cases__card-desc" data-var="package-${index}">${item.desc}</div>
             //         </div>
-            //         <img class="cases__card-img" data-var="course-${index}" src="img/cases/img1.jpg" loading="lazy" data-defer-src="${item.cover
-            //     || "img/cases/img1.jpg"}" data-defer-content="course" alt="${item.title}">
+            //         <img class="cases__card-img" data-var="package-${index}" src="img/cases/img1.jpg" loading="lazy" data-defer-src="${item.cover
+            //     || "img/cases/img1.jpg"}" data-defer-content="package" alt="${item.title}">
             //     </div>
             // `);
         });

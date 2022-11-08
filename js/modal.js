@@ -47,15 +47,15 @@ const contentModal = function (type, property) {
             </div>
             `;
             break;
-        case "course":
-            property = courseView[property];
+        case "package":
+            property = packageView[property];
             modalTitle.innerText = property.title || "STUDENT EXCHANGE PROGRAM";
             const contents = property.contents;
             const silabus = property.silabus;
             const firstContent = contents[0];
             content = `
-            <div class="course_modal_popup-image-wrapper">
-                <img class="course_modal_popup-image" src="img/about/img.jpg" loading="lazy" data-defer-src="${property.banner || "img/about/img.jpg"}" data-defer-content="modal" />
+            <div class="package_modal_popup-image-wrapper">
+                <img class="package_modal_popup-image" src="img/about/img.jpg" loading="lazy" data-defer-src="${property.banner || "img/about/img.jpg"}" data-defer-content="modal" />
             </div>
             <div class="first-content">
                 <div class="first-content-title itb-modal-content-title">
@@ -66,8 +66,8 @@ const contentModal = function (type, property) {
                 </div>
                 </div>
             </div>
-            <div class="course_modal_popup-content">
-                <div class="course_modal_popup-content-left">
+            <div class="package_modal_popup-content">
+                <div class="package_modal_popup-content-left">
                     <div class="pdf">
                         <div class="pdf-image">
                             <img src="img/cases/img1.jpg" loading="lazy" data-defer-src="${property.downloadCover || "img/cases/img1.jpg"}" data-defer-content="modal" alt="img">
@@ -82,7 +82,7 @@ const contentModal = function (type, property) {
                         </div>
                     </div>
                 </div>
-                <div class="course_modal_popup-content-right">
+                <div class="package_modal_popup-content-right">
             `;                        
                         
             if (contents.length > 1) {
