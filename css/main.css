@@ -16,6 +16,9 @@
   --lightblue: #1b72cf;
   --lightgrey: #d1d1d1;
   --xlfont: 48px;
+  --largefont: 24px;
+  --mediumfont: 18px;
+  --smallfont: 15px;
   --hovercolor: var(--blue);
   --hovercolorblack: var(--black);
   --background: var(--white);
@@ -73,7 +76,7 @@
 .btn-radius-m {
   padding: 15px 30px;
   border-radius: 150px;
-  font-size: 15px;
+  font-size: var(--smallfont);
 }
 
 .btn-radius-sm {
@@ -238,7 +241,7 @@
 
 .pdf-desc,
 .itb-modal-content-desc {
-  font-size: 15px;
+  font-size: var(--smallfont);
   color: var(--black);
   margin-bottom: 40px;
 }
@@ -322,7 +325,7 @@
   }
 
   .itb-modal-content-desc {
-    font-size: 13px;
+    font-size: var(--smallfont);
   }
 
   .pdf-download {
@@ -346,7 +349,7 @@
   display: flex;
   margin-right: -20px;
   flex-wrap: wrap;
-  font-size: 15px;
+  font-size: var(--smallfont);
   color: var(--black);
 }
 
@@ -416,7 +419,7 @@ table td {
 }
 
 table th {
-  font-size: 18px;
+  font-size: var(--mediumfont);
   letter-spacing: .1em;
   font-weight: bold;
   padding: .5em 0px;
@@ -682,7 +685,7 @@ body {
 
 @media (max-width: 520px) {
   .home__title {
-    font-size: 48px;
+    font-size: var(--xlfont);
     width: 80%;
   }
 }
@@ -696,7 +699,7 @@ body {
 }
 
 .home__desc {
-  font-size: 18px;
+  font-size: var(--mediumfont);
   line-height: 130%;
   letter-spacing: 0.02em;
   /* text-transform: uppercase; */
@@ -805,15 +808,9 @@ body {
   width: 60%;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: var(--mediumfont);
   line-height: 140%;
   color: var(--black)
-}
-
-@media (max-width: 1559px) {
-  .about__text-desc {
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 992px) {
@@ -941,11 +938,9 @@ body {
   }
 }
 
-
-
 .awards__desc {
   color: var(--black);
-  font-size: 15px;
+  font-size: var(--mediumfont);
   margin-right: 20px;
 }
 
@@ -955,7 +950,7 @@ body {
 
 .awards__subdesc {
   color: var(--black);
-  font-size: 15px;
+  font-size: var(--smallfont);
   margin: 25px 0;
 }
 
@@ -1071,28 +1066,16 @@ body {
 }
 
 .contacts__contacts-desc {
-  font-size: 18px;
+  font-size: var(--mediumfont);
   line-height: 110%;
   color: var(--black);
   margin-bottom: 10px;
 }
 
 .contacts__contacts-head {
-  font-size: 28px;
+  font-size: var(--largefont);
   line-height: 110%;
   color: var(--blue);
-}
-
-@media (max-width: 767px) {
-  .contacts__contacts-head {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 620px) {
-  .contacts__contacts-head {
-    font-size: 24px;
-  }
 }
 
 .contacts__contacts-list {
@@ -1101,7 +1084,6 @@ body {
 }
 
 .contacts-list__item {
-  font-size: 18px;
   line-height: 140%;
   color: var(--black);
 }
@@ -1213,7 +1195,7 @@ body {
   background: transparent;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: var(--mediumfont);
   line-height: 140%;
   color: #F3F3F3;
   border-bottom: 1px solid var(--grey);
@@ -1247,7 +1229,7 @@ body {
   background: transparent;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: var(--mediumfont);
   line-height: 140%;
   height: 46px;
   color: #F3F3F3;
@@ -1398,7 +1380,7 @@ body {
 }
 
 .blog__swiper-card-date {
-  font-size: 18px;
+  font-size: var(--mediumfont);
   line-height: 140%;
   margin-top: 1.85185vh;
   font-weight: 400;
@@ -1406,7 +1388,7 @@ body {
 
 .blog__swiper-card-desc {
   margin-top: 0.92593vh;
-  font-size: 13px;
+  font-size: var(--smallfont);
   line-height: 140%;
 }
 
@@ -1590,7 +1572,7 @@ body {
 
 @media (max-width: 767px) {
   .testimonials__swiper-text {
-    font-size: 18px;
+    font-size: var(--mediumfont);
   }
 }
 
@@ -1658,7 +1640,7 @@ body {
 
 @media (max-width: 450px) {
   .testimonials__swiper-author {
-    font-size: 18px;
+    font-size: var(--mediumfont);
     margin-top: 15px;
   }
 }
@@ -1667,7 +1649,7 @@ body {
   font-family: SF Pro Display;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: var(--mediumfont);
   line-height: 140%;
   color: #F3F3F3;
   margin-top: 20px;
@@ -1681,7 +1663,7 @@ body {
 
 @media (max-width: 450px) {
   .testimonials__swiper-author-info {
-    font-size: 14px;
+    font-size: var(--smallfont);
     margin-top: 15px;
   }
 }
@@ -1800,7 +1782,7 @@ body {
 
 .cases__header-title {
   color: var(--black);
-  font-size: 15px;
+  font-size: var(--smallfont);
   margin-bottom: 10px;
 }
 
@@ -2022,7 +2004,7 @@ body {
 }
 
 .cases__card-desc {
-  font-size: 12px;
+  font-size: var(--smallfont);
   line-height: 120%;
   color: var(--hovercolorblack);
   margin-bottom: 15px;
@@ -2201,7 +2183,7 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-  font-size: 18px;
+  font-size: var(--mediumfont);
   line-height: 140%;
   background-color: transparent;
   z-index: 20;

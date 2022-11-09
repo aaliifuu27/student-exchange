@@ -2,7 +2,7 @@ const packages = [
     {
         "category": "FULL SEMESTER",
         "title": "SUSTAINABLE INFRASTRUCTURE",
-        "desc": "COURSE PACKAGE FOR ADVANCED BACHELOR’S OR MASTER'S STUDENT",
+        "desc": "COURSE PACKAGES FOR ADVANCED BACHELOR’S OR MASTER'S STUDENT",
         "faculty": "School of Architecture, Planning, and Policy Development",
         "cover": "courses/full/cover/01.jpg",
         "banner": "courses/full/banner/01.jpg",
@@ -47,7 +47,7 @@ const packages = [
     {
         "category": "FULL SEMESTER",
         "title": "ECOLOGICAL DESIGN",
-        "desc": "COURSE PACKAGE FOR BACHELOR’S OR MASTER'S STUDENT",
+        "desc": "COURSE PACKAGES FOR BACHELOR’S OR MASTER'S STUDENT",
         "faculty": "School of Architecture, Planning, and Policy Development",
         "cover": "courses/full/cover/02.jpg",
         "banner": "courses/full/banner/02.jpg",
@@ -59,7 +59,7 @@ const packages = [
                 PACKAGES`,
                 "desc": `Ecological Design will be jointly managed by 
                 the Architecture and landscape Architecture 
-                study programs which is a course package. 
+                study programs which is a course packageS. 
                 There are 4 courses from SAPPK ITB plus one 
                 course from Product Design, namely landscape ecology, bamboo building technology, 
                 green building, then history and tradition of 
@@ -102,7 +102,7 @@ const packages = [
     {
         "category": "FULL SEMESTER",
         "title": "INDONESIAN VISUAL CULTURE",
-        "desc": "COURSE PACKAGE FOR BACHELOR’S STUDENT",
+        "desc": "COURSE PACKAGES FOR BACHELOR’S STUDENT",
         "faculty": "Faculty oF Art and Design",
         "cover": "courses/full/cover/03.jpg",
         "banner": "courses/full/banner/03.jpg",
@@ -181,7 +181,7 @@ const packages = [
     {
         "category": "FULL SEMESTER",
         "title": "TROPICAL GREEN AND SUSTAINABLE ARCHITECTURE OF INDONESIA",
-        "desc": "COURSE PACKAGE FOR MASTER’S STUDENT",
+        "desc": "COURSE PACKAGES FOR MASTER’S STUDENT",
         "faculty": "School of Architecture, Planning, and Policy Development",
         "cover": "courses/full/cover/04.jpg",
         "banner": "courses/full/banner/04.jpg",
@@ -232,7 +232,7 @@ const packages = [
     {
         "category": "FULL SEMESTER",
         "title": "PLANNING AND DESIGNING CITIES IN THE GLOBAL SOUTH",
-        "desc": "COURSE PACKAGE FOR ADVANCED BACHELOR’S AND MASTER’S STUDENT",
+        "desc": "COURSE PACKAGES FOR ADVANCED BACHELOR’S AND MASTER’S STUDENT",
         "faculty": "School of Architecture, Planning, and Policy Development",
         "cover": "courses/full/cover/05.jpg",
         "banner": "courses/full/banner/05.jpg",
@@ -285,7 +285,7 @@ const packages = [
     {
         "category": "FULL SEMESTER",
         "title": "SENSOR TECHNOLOGY FOR INDUSTRY 4.0",
-        "desc": "COURSE PACKAGE FOR BACHELOR’S STUDENT",
+        "desc": "COURSE PACKAGES FOR BACHELOR’S STUDENT",
         "faculty": "Faculty of Industrial Technology",
         "cover": "courses/full/cover/06.jpg",
         "banner": "courses/full/banner/06.jpg",
@@ -315,7 +315,7 @@ const packages = [
     {
         "category": "FULL SEMESTER",
         "title": "ADVANCES IN MEDICAL BIOTECHNOLOGY",
-        "desc": "COURSE PACKAGE FOR ADVANCED BACHELOR’S STUDENT",
+        "desc": "COURSE PACKAGES FOR ADVANCED BACHELOR’S STUDENT",
         "faculty": "School of Life Sciences and Technology",
         "cover": "courses/full/cover/07.jpg",
         "banner": "courses/full/banner/07.jpg",
@@ -361,7 +361,7 @@ const packages = [
     {
         "category": "FULL SEMESTER",
         "title": "MODERN AND HERBAL MEDICINE: INDONESIAN PERSPECTIVES",
-        "desc": "COURSE PACKAGE FOR ADVANCED BAC",
+        "desc": "COURSE PACKAGES FOR ADVANCED BAC",
         "faculty": "School of Pharmacy",
         "cover": "courses/full/cover/08.jpg",
         "banner": "courses/full/banner/08.jpg",
@@ -459,7 +459,7 @@ Methods (2 Credits)`,
     {
         "category": "FULL SEMESTER",
         "title": "SUSTAINABLE AQUACULTURE AND TROPICAL AGRICULTURE",
-        "desc": "COURSE PACKAGE FOR ADVANCED BACHELOR’S STUDENT",
+        "desc": "COURSE PACKAGES FOR ADVANCED BACHELOR’S STUDENT",
         "faculty": "School of Life Sciences and Technology",
         "cover": "courses/full/cover/09.jpg",
         "banner": "courses/full/banner/09.jpg",
