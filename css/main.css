@@ -946,6 +946,7 @@ body {
 
 .awards__desc_mt {
   margin-top: 10px;
+  font-weight: bolder;
 }
 
 .awards__subdesc {

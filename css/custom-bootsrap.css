@@ -53,12 +53,20 @@
   color: var(--grey);
 }
 
+.fw-bd {
+  font-weight: bolder;
+}
+
 .p-1 {
   padding: 2px;
 }
 
 .circle {
   border-radius: 50%;
+}
+
+.mt-1 {
+  margin-top: 10px !important;
 }
 
 .mb-1 {
